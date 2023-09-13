@@ -1,13 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Roboto+Serif:ital,wght@0,200;0,300;1,200;1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+*,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* button css */
+.login-with-google-btn {
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+
+  &:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    background-color: #eeeeee;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+      0 0 0 3px #c8dafc;
+  }
+}
+
+/* button css */
+.landing-main {
+  background-color: #0c1317;
+}
+.landing-header-bg {
+  background-color: #00a884;
+  height: 200px;
+}
+.landing-wrapper {
+  width: 90%;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+.title-txt {
+  font-size: 14px;
+}
+.landing-wrapper-e2 {
+  width: 100%;
+  height: 70vh;
+  /* background-color: #7a837f; */
+  border-radius: 3px;
+}
+.user-layout {
+  background-color: #0c1317;
+}
+
+.sidebar {
+  width: 440px;
+}
+
+.sidebar-top {
+  background-color: #202c33;
+}
+
+.profile-img {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.left {
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+}
+.right {
+  background-color: #222e35;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  border-left-color: #424c48;
+  border-left-width: 0.001dvb;
+  font-family: "Noto Sans", sans-serif !important;
+  border-bottom-color: #008069;
+  border-bottom-width: 5px;
+}
+
+.r-img {
+  width: 320px;
+  height: 188px;
+}
+.get-app-btn {
+  background-color: #00a884;
+  border-radius: 24px;
+  color: black;
+  padding: 10px 24px;
+  align-self: center;
+  justify-self: center;
+  margin-top: 18px;
+  font-size: 14px;
+}
+.x {
+  text-align: center;
+  transform: scale(0.98);
+}
+.r-txt {
+  margin-top: 18px;
+  max-width: 90%;
+  font-size: 14px;
+}
+.dwnld-txt {
+  font-size: 32px;
+  font-family: "Noto Sans";
+  margin-top: 24px;
+  color: #c6c6c6;
+}
+.lock-txt {
+  color: #74838d;
+  font-family: "Noto Sans";
+  font-size: 14px;
+}
+.right-bottom {
+  display: flex;
+  /* display: block; */
+  position: absolute;
+  bottom: 60px;
+}
+.csb,
+.search-div {
+  background-color: #202c33;
+  padding: 2px 7px 2px 7px;
+  border-radius: 7px;
+}
+.search-box {
+  padding: 10px 7px 6px 7px;
+  background-color: #111b21;
+}
+.csb {
+  padding-left: 20px;
+}
+.csb::placeholder {
+  font-size: 14px;
+  font-family: Noto Sans;
+}
+.filter-icon {
+  padding: 0 3px 0 7px;
+}
+.chat-section {
+  background-color: #111b21;
+  color: whitesmoke;
+  height: 91.9% !important;
+  padding-bottom: 10px;
+}
+.cl {
+  overflow-y: scroll;
+  height: 94%;
+
+  scrollbar-width: thin;
+  scrollbar-color: #cccccc #f5f5f5;
+
+  /* Customize the scrollbar thumb (the draggable part) */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #374045;
+  }
+}
+.cl-pic {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+.cl-username {
+  font-family: "Noto Sans";
+  font-size: 16px;
+}
+.cl-unt {
+  width: 100%;
+}
+
+.cl-time {
+  color: #abb1ae;
+  font-family: "Noto Sans";
+  font-size: 12px;
+}
+.cl-lm {
+  font-family: sans-serif;
+  color: #a4a3a3;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.cl-tnlm {
+  position: relative;
+  margin-top: 5px;
+}
+.fb {
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(134, 150, 160, 0.15);
+}
+.cl-item {
+  cursor: pointer;
+  /* background-color: rgb(42, 57, 66); */
+}
+.cl-item:hover {
+  background-color: rgb(42, 57, 66);
+}
+
+.edit-profile {
+  /* display: none; */
+  position: absolute;
+  color: whitesmoke;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111b21;
+  animation-name: epa;
+  animation-duration: 500ms;
+}
+.sidebar {
+  position: relative;
+}
+@keyframes epa {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.eph {
+  background-color: #202c33;
+  font-family: "Roboto";
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  padding: 70px 0 10px 0;
+}
+.epsib {
+  background: none;
+}
+
+.npt {
+  color: rgb(159, 174, 172);
+  font-family: "Noto Sans";
+  font-size: 14px;
+}
+
+.p-img-div {
+  position: relative;
+  z-index: 0;
+}
+.psio {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(42, 57, 66, 0.7);
+  z-index: 1;
+}
+.p-img-div:hover {
+  .psio {
+    visibility: visible;
+  }
+}
+
+.cpp-txt {
+  font-size: 12px;
 }
